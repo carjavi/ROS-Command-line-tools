@@ -6,6 +6,8 @@
 
 ![ROS](https://img.shields.io/badge/ros-%230A0FF9.svg?style=for-the-badge&logo=ros&logoColor=white)
 
+![test](https://sketchfab.com/models/99bfe75ebd734fa3832a63e02e2cacf7/embed?annotations_visible=0&autospin=-0.1&autostart=1&camera=0&double_click=0&internal=1&max_texture_size=1024&orbit_constraint_pan=1&orbit_constraint_zoom_in=40&orbit_constraint_zoom_out=60&preload=1&scrollwheel=0&sound_enable=0&transparent=1&ui_animations=0&ui_annotations=0&ui_ar=1&ui_ar_help=0&ui_color=white&ui_fadeout=0&ui_fullscreen=1&ui_help=0&ui_infos=0&ui_inspector=0&ui_settings=0&ui_stop=0&ui_theatre=0&ui_theme=dark&ui_vr=0&ui_watermark=0)
+
 <br>
 
 # ROS Cheat Sheet
@@ -411,14 +413,14 @@ rosmsg show geometry_msgs/Twist
 
 ## Remote connection - master’s ROS environment
 ```
-export ROS_IP or ROS_HOSTNAME set to this machine’s network address
-export ROS_MASTER_URI set to URI containing that IP or hostname
+export ROS_IP or ROS_HOSTNAME  #set to this machine’s network address
+export ROS_MASTER_URI          #set to URI containing that IP or hostname
 ```
 
 ## Remote connection - your environment
 ```
-export ROS_IP or ROS_HOSTNAME #set to your machine’s network address
-export ROS_MASTER_URI #set to the URI from the master
+export ROS_IP or ROS_HOSTNAME   #set to your machine’s network address
+export ROS_MASTER_URI           #set to the URI from the master
 ```
 To debug, check ping from each side to the other, run roswtf on each side
 
