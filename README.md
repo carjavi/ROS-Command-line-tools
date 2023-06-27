@@ -40,7 +40,9 @@
 - [Setting up your environment](#setting-up-your-environment)
   - [ROS\_MASTER\_URI](#ros_master_uri)
   - [ROS\_HOSTNAME](#ros_hostname)
+- [Bags](#bags)
   - [Examples Commands](#examples-commands)
+- [Tips \& Atajos de teclado](#tips--atajos-de-teclado)
 
 <br>
 
@@ -460,6 +462,31 @@ Should be set to the PC you are as the workstation.
 export ROS_HOSTNAME=<workstation IP>
 ```
 
+# Bags
+Para crear un bag que salve todos los mensajes
+```
+rosbag record [-O bag_file] -a
+```
+Para salvar unos topics en particular:
+```
+rosbag record [-O bag_file] [topic_name1] [topic_name2] ...
+```
+La grabación se termina cuando se pulsa `ctrl-c`
+
+<br>
+
+Pasar de .bag.active a .bag
+```
+rosbag reindex *.bag.active
+rosbag fix *.bag.active new_name.bag
+```
+
+Cierre seguro del rosbag
+```
+rosnode kill /vt/rosbag/record
+```
+
+
 <br>
 <br>
 
@@ -476,6 +503,23 @@ http://wiki.ros.org/ROS/CommandLineTools
 ROS2: https://osrf.github.io/ros2multirobotbook/intro.html
 
 ROS1 & NodeJs: http://wiki.ros.org/rosnodejs
+
+<br>
+
+# Tips & Atajos de teclado
+
+Abrir un archivo directamente desde el terminal de VScode. abrira una ventana nueva
+```
+code (filename.ext)
+```
+> :bulb: **Tip:** El simbolo ~ (home) se hace con `Alg Gr + *`
+
+> :bulb: **Tip:** Borrar la consola, con `Ctrl + L`
+
+> :bulb: **Tip:** Unir 2 comandos de consola, `&&`
+
+> :bulb: **Tip:** Eliminacion forzada de archivos o directorios  `rm -rf (directorio)`
+
 
 <br>
 
