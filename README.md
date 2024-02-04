@@ -42,7 +42,7 @@
   - [ROS\_HOSTNAME](#ros_hostname)
 - [Bags](#bags)
   - [Examples Commands](#examples-commands)
-- [Tips \& Atajos de teclado](#tips--atajos-de-teclado)
+- [Tips](#tips)
 
 <br>
 
@@ -506,19 +506,8 @@ ROS1 & NodeJs: http://wiki.ros.org/rosnodejs
 
 <br>
 
-# Tips & Atajos de teclado
-
-Abrir un archivo directamente desde el terminal de VScode. abrira una ventana nueva
-```
-code (filename.ext)
-```
-> :bulb: **Tip:** El simbolo ~ (home) se hace con `Alg Gr + *`
-
-> :bulb: **Tip:** Borrar la consola, con `Ctrl + L`
-
-> :bulb: **Tip:** Unir 2 comandos de consola, `&&`
-
-> :bulb: **Tip:** Eliminacion forzada de archivos o directorios  `rm -rf (directorio)`
+# Tips
+> :memo: **Note:** Cuando corremos un comando echo -c , el el topico se mostrara sin salto de linea
 
 
 <br>
