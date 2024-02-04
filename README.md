@@ -507,7 +507,7 @@ ROS1 & NodeJs: http://wiki.ros.org/rosnodejs
 <br>
 
 # Tips
-> :memo: **Note:** Cuando corremos un comando echo -c , el el topico se mostrara sin salto de linea
+> :memo: **Note:** Cuando corremos un comando ```echo -c ```, el topico se mostrara sin salto de linea
 
 
 <br>
